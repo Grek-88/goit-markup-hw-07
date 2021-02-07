@@ -14,7 +14,7 @@
   <body>
     <!-- Шапка сайта -->
     <header class="navigation">
-      <div class="container main-nav">
+      <div class="container">
         <a href="./index.html" class="logo"
           ><span class="logo-color">Web</span>Studio</a
         >
@@ -157,7 +157,7 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list-no-style flex-team">
+          <ul class="list-no-style">
             <li class="item-team">
               <img
                 src="./img/igor.jpg"
@@ -421,7 +421,7 @@
             </li>
           </ul>
         </div>
-        <form name="subs-form" autocomplete="on">
+        <form name="subs-form" class="subs-form" autocomplete="on">
           <h3 class="join">Подпишитесь на рассылку</h3>
           <div class="subs-form-flex">
             <label for="subs-email" class="subs-form-label">E-mail</label>
@@ -454,28 +454,24 @@
               </svg>
             </div>
           </label>
-          <div class="modal-form-wrapper">
-            <label class="form-label">
-              Телефон
-              <div class="form-input-wrapper">
-                <input type="tel" name="phone_number" class="form-input" />
-                <svg class="modal-form-icon">
-                  <use href="./img/symbol-defs.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </label>
-          </div>
-          <div class="modal-form-wrapper">
-            <label class="form-label">
-              Почта
-              <div class="form-input-wrapper">
-                <input type="email" name="email" class="form-input" />
-                <svg class="modal-form-icon">
-                  <use href="./img/symbol-defs.svg#icon-email"></use>
-                </svg>
-              </div>
-            </label>
-          </div>
+          <label class="form-label">
+            Телефон
+            <div class="form-input-wrapper">
+              <input type="tel" name="phone_number" class="form-input" />
+              <svg class="modal-form-icon">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="form-label">
+            Почта
+            <div class="form-input-wrapper">
+              <input type="email" name="email" class="form-input" />
+              <svg class="modal-form-icon">
+                <use href="./img/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
           <label class="form-label">
             Комментарий
             <textarea

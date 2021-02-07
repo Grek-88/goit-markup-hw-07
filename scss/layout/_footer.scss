@@ -1,147 +1,39 @@
 .footer {
   background: $color-background;
+
   .logo {
     color: $color-light;
   }
-}
-.address .map,
-.address .map:visited,
-.address .map:hover,
-.address .map:focus {
-  font-style: normal;
-  color: $color-light;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  #subs-email:-webkit-autofill {
+    box-shadow: 0 0 0 30px $color-background inset;
+    -webkit-text-fill-color: $color-light;
+  }
 }
 
-.address .contacts,
-.address .contacts:visited,
-.address .contacts:hover,
-.address .contacts:focus {
-  font-style: normal;
-  line-height: 1.71;
-  color: $color-light;
-  opacity: 0.6;
-}
-
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  display: flex;
-  flex-direction: row;
-}
 .address {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-}
-.contacts {
-  margin-top: 10px;
-}
 
-.join {
-  font-size: 14px;
-  line-height: 1.1428;
-  text-transform: uppercase;
+  .map {
+    font-style: normal;
+    color: $color-light;
+  }
 
-  color: $color-light;
-
-  margin-top: 12px;
-}
-
-.footer-join {
-  margin-left: 70px;
-  margin-right: 93px;
-}
-
-.join-icon-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-.join-icon-flex .list-no-style:not(:last-child) {
-  margin-right: 10px;
-}
-.list-no-style .join-icon {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: $transition-duration-function;
-}
-
-.join-icon > .icon-team {
-  fill: $color-light;
-}
-
-.list-no-style .join-icon:hover,
-.list-no-style .join-icon:focus {
-  background: $hover-accent;
-}
-
-.subs-form-flex .button {
-  border: none;
-  margin-top: 0;
-  margin-left: 12px;
-  height: 50px;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
-  cursor: pointer;
-}
-
-.subs-form-flex {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.subs-form-flex .button svg {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}
-
-.subs-form-flex .subs-form-label {
-  position: absolute;
-  z-index: 1;
-  left: 16px;
-
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.subs-form-flex #subs-email {
-  width: 358px;
-  height: 50px;
-  background: $color-background;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-
-  padding-left: 65px;
-  color: $color-light;
-}
-
-.subs-form-flex #subs-email:focus {
-  outline: none;
-}
-.subs-form-flex #subs-email:focus {
-  border: 2px solid $hover-accent;
-}
-
-.footer #subs-email:-webkit-autofill {
-  box-shadow: 0 0 0 30px $color-background inset;
-  -webkit-text-fill-color: $color-light;
+  .contacts {
+    font-style: normal;
+    line-height: 1.71;
+    color: $color-light;
+    opacity: 0.6;
+    margin-top: 10px;
+  }
 }
