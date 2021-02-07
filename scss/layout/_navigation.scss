@@ -1,0 +1,72 @@
+.navigation,
+.navigation:visited {
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  color: $fonts-accent-color;
+
+  transition: color $transition-duration-function;
+}
+
+.address-nav .navigation {
+  display: flex;
+  color: $primary-font-color;
+  align-items: center;
+}
+
+.navigation:hover,
+.navigation:focus,
+.navigation.current {
+  color: $hover-accent;
+
+  position: relative;
+}
+
+.navigation.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background: $hover-accent;
+  border-radius: 2px;
+
+  position: absolute;
+  top: 45px;
+}
+
+.navigation .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.main-nav,
+.site-nav,
+.address-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item:not(:first-child) {
+  margin-left: 50px;
+}
+.address-nav {
+  margin-left: auto;
+}
+.address-nav .item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: $primary-font-color;
+
+  transition: fill $transition-duration-function;
+}
+
+.navigation:hover > .icon {
+  fill: $hover-accent;
+}
+.navigation:focus > .icon {
+  fill: $hover-accent;
+}
