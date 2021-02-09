@@ -54,6 +54,8 @@
 
 .modal-form {
   .form-input {
+    margin-top: 4px;
+
     &:not(.chekbox-input) {
       width: 100%;
       height: 40px;
@@ -72,6 +74,8 @@
   }
 
   .form-label {
+    position: relative;
+
     display: block;
     margin-top: 10px;
 
@@ -80,6 +84,15 @@
     letter-spacing: 0.01em;
 
     color: $primary-font-color;
+
+    .modal-form-icon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .form-textarea {
@@ -94,20 +107,6 @@
     &:focus {
       border: 1px solid $hover-accent;
       outline: none;
-    }
-  }
-  .form-input-wrapper {
-    position: relative;
-    margin-top: 4px;
-
-    .modal-form-icon {
-      position: absolute;
-      top: 50%;
-      left: 12px;
-      transform: translateY(-50%);
-
-      width: 18px;
-      height: 18px;
     }
   }
 
