@@ -56,7 +56,8 @@
     padding-left: 65px;
     color: $color-light;
 
-    &:focus {
+    &:focus,
+    &:hover {
       outline: none;
       border: 2px solid $hover-accent;
     }

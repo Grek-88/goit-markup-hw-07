@@ -63,7 +63,8 @@
       border-radius: 4px;
       padding-left: 42px;
     }
-    &:focus {
+    &:focus,
+    &:hover {
       border: 1px solid $hover-accent;
       outline: none;
 
@@ -104,7 +105,8 @@
     margin-top: 4px;
     resize: none;
 
-    &:focus {
+    &:focus,
+    &:hover {
       border: 1px solid $hover-accent;
       outline: none;
     }

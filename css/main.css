@@ -540,12 +540,12 @@ hr {
   padding-left: 42px;
 }
 
-.modal-form .form-input:focus {
+.modal-form .form-input:focus, .modal-form .form-input:hover {
   border: 1px solid #2196f3;
   outline: none;
 }
 
-.modal-form .form-input:focus ~ .modal-form-icon {
+.modal-form .form-input:focus ~ .modal-form-icon, .modal-form .form-input:hover ~ .modal-form-icon {
   fill: #2196f3;
 }
 
@@ -577,7 +577,7 @@ hr {
   resize: none;
 }
 
-.modal-form .form-textarea:focus {
+.modal-form .form-textarea:focus, .modal-form .form-textarea:hover {
   border: 1px solid #2196f3;
   outline: none;
 }
@@ -764,7 +764,7 @@ hr {
   color: #ffffff;
 }
 
-.subs-form-flex #subs-email:focus {
+.subs-form-flex #subs-email:focus, .subs-form-flex #subs-email:hover {
   outline: none;
   border: 2px solid #2196f3;
 }
