@@ -557,6 +557,9 @@ hr {
 .subs-form-flex #subs-email:focus {
   outline: none;
 }
+.subs-form-flex #subs-email:focus {
+  border: 2px solid var(--hover-accent);
+}
 
 .footer #subs-email:-webkit-autofill {
   box-shadow: 0 0 0 30px var(--color-background) inset;
